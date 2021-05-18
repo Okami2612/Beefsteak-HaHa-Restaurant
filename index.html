@@ -5,22 +5,388 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bò né HaHa</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <div class="container">
-            <div class="row">
+            <div class="row align-items-center justify-content-between">
                 <div class="logo">
-                    <a href="#" class="logo">Bò né HaHa</a>
+                    <a href="#home" class="logo">Bò né HaHa</a>
                 </div>
                 <button class="nav-toggler" type="button">
                     <span></span>
                 </button>
+                <nav class="nav">
+                    <ul>
+                        <li class="nav-item"><a href="#home">Home</a></li>
+                        <li class="nav-item"><a href="#about">Giới thiệu</a></li>
+                        <li class="nav-item"><a href="#menu">Menu</a></li>
+                        <li class="nav-item"><a href="#contact">Liên hệ</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
     <!-- End Header -->
+
+    <!-- Home section -->
+    <section class="home-section" id="home">
+        <div class="home-bg"></div>
+        <div class="container">
+            <div class="row min-vh-100">
+                <div class="home-text">
+                    <h1>Bò né HaHa Restaurant</h1>
+                    <p>Quán Bò né ngon nhất Nha Trang với thịt Bò Úc hảo hạng</p>
+                    <a href="#menu" class="btn btn-default">Our Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Home section -->
+
+    <!-- About section -->
+    <section class="about-section sec-padding" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2 data-title="our story">About us</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="about-text">
+                    <h3>Chào mừng quý khách đến với Bò né HaHa</h3>
+                    <p>Nhà hàng Bò né HaHa mở cửa từ năm 2016 với thực đơn chính là các mòn được chế biến từ thịt bò Úc hảo hạng.<br/>
+                    Đến với Nhà hàng Bò né Haha, các bạn sẽ được phục vụ những món ăn ngon miệng với vị thịt bò ngon, ngọt, mềm và hấp dẫn.<br/>
+                    Các bạn hãy ghé qua và trải nghiệm.
+                    </p>
+                    <a href="#menu" class="btn btn-default">Check Our Menu</a>                    
+                </div>
+                <div class="about-img">
+                    <div class="img-box">
+                        <h3>Hơn 5 năm kinh nghiệm phục vụ bò né, beefsteak<br/> với thịt Bò Úc hảo hạng</h3>
+                        <img src="img/bg.jpg" alt="about img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About section -->
+
+    <!-- Menu Section -->
+    <section class="menu-section sec-padding" id="menu">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2 data-title="order now">Our Menu</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="menu-tabs">
+                    <button class="menu-tab-item active" type="button" data-target="#main">Món chính</button>
+                    <button class="menu-tab-item" type="button" data-target="#addon">Món ăn thêm</button>
+                    <button class="menu-tab-item" type="button" data-target="#drinks">Đồ uống</button>
+                </div>
+            </div>
+            <div class="row menu-tab-content active" id="main">
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="img/bo-ne.jpg" alt="menu item thumbnail">
+                        <h3>Bò né ( thịt Bò úc, Ốp la, xíu mại )</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        VND 45.000
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="img/beef-steak.jpg" alt="menu item thumbnail">
+                        <h3>Beefsteak ( thịt Bò Úc, khoai tây chiên )</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        VND 55.000
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="img/oplaxm.jpg" alt="menu item thumbnail">
+                        <h3>Opla xíu mại ( Ốp la, xíu mại, bacon, xúc xích)</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        VND 30.000
+                    </div>
+                </div>
+            </div>
+            <div class="row menu-tab-content" id="addon">
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="img/sample.jpg" alt="menu item thumbnail">
+                        <h3>Bò thêm</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        VND 25.000
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="img/french-fries.jpg" alt="menu item thumbnail">
+                        <h3>Khoai tây chiên</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        VND 15.000
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="img/sample.jpg" alt="menu item thumbnail">
+                        <h3>Opla thêm</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        VND 5.000
+                    </div>
+                </div>                
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="img/sample.jpg" alt="menu item thumbnail">
+                        <h3>Xíu mại thêm</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        VND 7.000
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="img/bread.jpg" alt="menu item thumbnail">
+                        <h3>Bánh mì thêm</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        VND 4.000
+                    </div>
+                </div>
+            </div>
+            <div class="row menu-tab-content" id="drinks">
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="img/sample.jpg" alt="menu item thumbnail">
+                        <h3>Coca Cola</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        VND 12.000
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="img/sample.jpg" alt="menu item thumbnail">
+                        <h3>Pepsi</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        VND 12.000
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="img/sample.jpg" alt="menu item thumbnail">
+                        <h3>7up</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        VND 12.000
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="img/sample.jpg" alt="menu item thumbnail">
+                        <h3>Trà xanh</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        VND 12.000
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="img/sample.jpg" alt="menu item thumbnail">
+                        <h3>Revive</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        VND 12.000
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="img/sample.jpg" alt="menu item thumbnail">
+                        <h3>Trà bí đao</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        VND 12.000
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="img/sample.jpg" alt="menu item thumbnail">
+                        <h3>Nước khoáng</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        VND 12.000
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="img/sample.jpg" alt="menu item thumbnail">
+                        <h3>Nước suối</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        VND 10.000
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="img/sample.jpg" alt="menu item thumbnail">
+                        <h3>Nước yến</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        VND 15.000
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="img/sample.jpg" alt="menu item thumbnail">
+                        <h3>Bò húc</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        VND 15.000
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="img/sample.jpg" alt="menu item thumbnail">
+                        <h3>Beer Sài gòn</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        VND 15.000
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="img/sample.jpg" alt="menu item thumbnail">
+                        <h3>Beer Tiger</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        VND 17.000
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Menu Section -->
+
+    <!-- Service section -->
+    <section class="services-section sec-padding" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2 data-title="Services">Our Services</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="service-item">
+                    <img src="img/flags.png" alt="">
+                    <h3>Tổ chức tiệc sinh nhật</h3>
+                    <p>Nếu bạn muốn tổ chức tiệc sinh nhật cho 8-15 người, hãy chọn Nhà hàng của tôi, chúng tôi có một địa điểm đẹp, quán sạch sẽ và món thịt bò tuyệt vời dành cho bạn.
+                    </p>
+                </div>
+                <div class="service-item">
+                    <img src="img/meeting.png" alt="">
+                    <h3>Họp mặt, hội họp</h3>
+                    <p>Nhà hàng chúng tôi có thể không phải là một nơi hoàn hảo, nhưng đây là nơi bạn có thể vừa thưởng thức món thịt bò ngon nhất và thảo luận về kế hoạch mới của mình.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Service Section -->
+
+    <!-- Team section -->
+    <section class="team-section sec-padding" id="team">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2 data-title="chef">Our chef</h2>
+                </div>                
+            </div>
+            <div class="row">
+                <div class="team-item">
+                    <img src="img/front.jpg" alt="">
+                    <div class="team-item-info">
+                        <h2>Lê Anh Tuấn</h2>
+                        <p>Chef n' Owner</p>
+                        <div class="social">
+                            <a href="" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="" class="social-icon"><i class="fab fa-instagram"></i></a>                                
+                            <a href="" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-item">
+                    <img src="img/mama.jpg" alt="">
+                    <div class="team-item-info">
+                        <h2>Mama</h2>
+                        <p>Manager</p>
+                        <div class="social">
+                            <a href="" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="" class="social-icon"><i class="fab fa-instagram"></i></a>                                
+                            <a href="" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Team Section -->
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="footer-item">
+                    <h3>Bò né HaHa Restaurant</h3>
+                    <p>27A Lê Quý Đôn
+                        <br/>Nha Trang, Khánh Hòa
+                    </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3899.0662751083532!2d109.18923441526645!3d12.243791833741003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3170677f0191418d%3A0x266d8c55365736ed!2zQsOyIE7DqSBIYWhh!5e0!3m2!1sen!2s!4v1583205144608!5m2!1sen!2s"
+                    width="500" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+                <div class="footer-item">
+                    <h3>Giờ mở cửa</h3>
+                    <p>Sáng: 06:00 - 10:00
+                        <br/>Chiều: 1630 - 20:30
+                        <br/>Quán nghỉ ngày rằm, mùng 1
+                    </p>
+                </div>
+                <div class="footer-item">
+                    <h3>Liên hệ</h3>
+                    <p>
+                        <i class="fas fa-mobile" style="margin-right: 10px"></i>+84 935 909 788
+                        <br/><i class="fas fa-mobile" style="margin-right: 10px"></i>+84 902 314 797                        
+                    </p>
+                    <div class="social-links">
+                        <a href="" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="" class="social-icon"><i class="fab fa-instagram"></i></a>                                
+                        <a href="" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>                
+            </div>
+            <div class="row">
+                <div class="copyright">
+                    &copy; 2021 - Bao tin Solutions
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="js/main.js"></script>
     
 </body>
 </html>
